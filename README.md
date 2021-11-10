@@ -1,20 +1,14 @@
-# Traefik Jira
+# Jira Using docker-compose up -d
 
-A Docker Compose configuration to run [Jira](https://www.atlassian.com/software/jira) behind a [Traefik](https://traefik.io/) reverse proxy.
+* git clone 
 
-## Usage
+* see [.env](.envUrl)
 
-1. Clone this repository.
-2. Copy `.env.example` to `.env` and modify the variables.
-3. Run `docker-compose up -d`.
+* Cusomize your environment variables.
 
-## Installation
+* Delete the .example from the [.env file](.envFileUrl)
 
-When setting up for the first time, you'll need to configure Jira. When asked what kind of environment you're setting up, specify it's a production environment. When asked to set up the database, specify you're using your own database and fill in the following details:
-- Database type: `PostgreSQL`
-- Hostname: `postgres`
-- Port: `5432`
-- Database: `jira`
-- Username: `jira`
-- Password: the password you set in `.env`
-- Schema: `public`
+* Use ```docker-compose up -d```
+
+* In Addition - you will may need to run [volumes.sh](volumesUrl)
+

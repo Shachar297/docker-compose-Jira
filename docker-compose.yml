@@ -14,7 +14,7 @@ services:
       - jira:/var/atlassian/jira
     labels:
       traefik.enable: true
-      traefik.port: 8080
+      traefik.port: ${PORT}
       traefik.frontend.rule: "Host:${DOMAIN}"
     restart: unless-stopped
   postgres:
