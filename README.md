@@ -28,3 +28,4 @@
 
 * Go to your browser and go to localhost:8080
 
+[Atlassian Jira Image](https://hub.docker.com/r/atlassian/jira-software)
