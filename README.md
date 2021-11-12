@@ -12,7 +12,7 @@
 
 * In Addition - you will may need to run [volumes.sh](https://github.com/Shachar297/docker-compose-Jira/blob/master/volumes.sh)
 
-## If You Wish you set up your jira in another way, please look at [dockerJira.sh](dockerJira.sh)
+## If You Wish you set up your jira in another way, please look at [dockerJira.sh](https://github.com/Shachar297/docker-compose-Jira/blob/master/dockerJira.sh)
 
 
 #### This Repository Will show you hot to set up your jira so easy !
