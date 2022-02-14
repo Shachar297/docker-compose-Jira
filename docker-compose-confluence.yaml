@@ -1,0 +1,27 @@
+version: '3'
+services:
+    postgres:
+        image: blacklabelops/postgres
+        restart: always
+        networks:
+          - confluencenet
+        volumes:
+          - ./postgresql:/var/lib/postgresql
+        environment:
+          - POSTGRES_DB=confluence
+          - POSTGRES_USER=confluence
+          - POSTGRES_PASSWORD=confluence
+          - POSTGRES_ENCODING=UNICODE
+          - POSTGRES_COLLATE=C
+          - POSTGRES_COLLATE_TYPE=C
+    confluence:
+        image: atlassian/confluence-server:7.1.2
+        restart: always
+        networks:
+          - confluencenet
+        volumes:
+          - ./confluence-home:/var/atlassian/application-data/confluence
+        ports:
+          - 8100:8100
+networks:
+    confluencenet: {}
