@@ -1,5 +1,10 @@
 # Jira Using docker-compose up -d
 
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/nirgeier/KubernetesLabs)
+### **<kbd>CTRL</kbd> + click to open in new window**  
+
+
 * git clone 
 
 * see [.env](.https://github.com/Shachar297/docker-compose-Jira/blob/master/.env.example)
