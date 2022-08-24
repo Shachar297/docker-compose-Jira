@@ -1,9 +1,7 @@
 FROM httpd
 
 RUN apt update -y && \
-    apt install zip unzip curl default-jdk default-jre -y && \
-    alias ll="ls -la" && \
-    alias c="clear"
+    apt install zip unzip curl default-jdk default-jre -y
     
 WORKDIR /var/jira-home
 

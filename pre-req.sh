@@ -1,3 +1,11 @@
+isUniversalRunner=true
+jiraVersion="8.22.6"
+
+
+
+
+
+
 universalJiraRunner() {
     cd jira
     chmod +x dockerJira.sh
@@ -26,13 +34,12 @@ macUniversalInstallations() {
 }
 
 macM1Installations() {
-    echo "downloading atlassian-jira-software-8.22.6"
-    wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-8.22.6.zip
-    mv atlassian-jira-software-8.22.6.zip jira-mac-1
+    echo "downloading atlassian-jira-software-$jiraVersion"
+    wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-$jiraVersion.zip
+    mv atlassian-jira-software-$jiraVersion.zip jira-mac-1
 }
 
 
-isUniversalRunner=true
  
 
 if [[ $(uname -s) -eq "Darwin" ]]; then
@@ -52,7 +59,7 @@ if [[ $(uname -s) -eq "Darwin" ]]; then
 else
 
     unixInstallations
-    
+
 fi
 
     while true; do
