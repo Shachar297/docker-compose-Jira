@@ -32,7 +32,7 @@ macM1Installations() {
 }
 
 
-isUniversalRunner=false
+isUniversalRunner=true
  
 
 if [[ $(uname -s) -eq "Darwin" ]]; then
@@ -53,7 +53,6 @@ else
 fi
 
     while true; do
-    echo $yn
         case $yn in
             [Yy]* ) universalJiraRunner; break;;
             [Nn]* ) break;;
