@@ -45,11 +45,14 @@ if [[ $(uname -s) -eq "Darwin" ]]; then
             * ) echo "Please provide an anser with yes or no.";;
         esac
     done
+
     isUniversalRunner=$yn
     macUniversalInstallations
 
 else
+
     unixInstallations
+    
 fi
 
     while true; do
