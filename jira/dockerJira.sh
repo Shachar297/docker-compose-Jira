@@ -6,6 +6,6 @@ docker run -v \
     jira-vol:/var/atlassian/application-data/jira \
     --name="jira" -d \
     -p 8080:8080 \
-    dchevell/jira-software-arm64
+    atlassian/jira-software:8.5.4
 
 docker ps | grep jira
